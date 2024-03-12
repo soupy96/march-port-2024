@@ -49,7 +49,7 @@ const Info = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1vw;
 `;
 
 const DotBox = styled.span`
@@ -62,7 +62,7 @@ const ViewMoreProjects = styled.div`
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  font-size: 1.25rem;
+  font-size: 0.75vw;
   margin-top: 10px;
 
   a::after {

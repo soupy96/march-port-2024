@@ -20,7 +20,7 @@ body {
 }
 
 .marquee {
-  font-size: 7rem;
+  font-size: 4vw;
   background-color: #f2e1c2;
   color: #f27830;
   font-style: italic;
@@ -126,4 +126,21 @@ body {
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+  .projectbox {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card-page {
+    width: 100%;
+  }
 }

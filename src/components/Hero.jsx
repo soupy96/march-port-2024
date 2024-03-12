@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import hero from '../assets/imgs/oleg-laptev-unsplash.png';
-// import hero from '../assets/imgs/ashim-d-silva-unsplash.png';
 
 // TODO
 // make text look nice
@@ -30,7 +29,7 @@ const HeroBG = styled.div`
 `;
 
 const HeroOneLiner = styled.h2`
-  font-size: 5rem;
+  font-size: 4vw;
   width: 40%;
   margin-left: 10%;
 `;

@@ -75,6 +75,12 @@ const ProjectInfo = styled.div`
   margin: 50px 0px;
   position: relative;
   height: 100%;
+
+  @media only screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px;
+  }
 `;
 
 const ProjectLinks = styled.div`
@@ -87,6 +93,13 @@ const ProjectLinks = styled.div`
   border-bottom: 1px solid #401515;
   padding: 10px 0px;
   height: 150px;
+
+  @media only screen and (max-width: 768px) {
+    position: relative;
+    width: 100%;
+    top: 25px;
+    margin-bottom: 50px;
+  }
 
   p {
     font-size: 1.5rem;
@@ -104,6 +117,10 @@ const ProjectLinks = styled.div`
 
 const ProjectBody = styled.div`
   width: 60%;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
 
   p {
     font-size: 3rem;

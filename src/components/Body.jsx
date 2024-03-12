@@ -80,9 +80,13 @@ const BodyBox = styled.div`
 
 const NumberSide = styled.div`
   width: 40%;
-  font-size: 35rem;
+  font-size: 20vw;
   display: flex;
   justify-content: space-evenly;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 
   p {
     position: sticky;
@@ -98,6 +102,10 @@ const RightSide = styled.div``;
 
 const BodySide = styled.div`
   width: 60%;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const SingleBody = styled.div`
@@ -109,10 +117,10 @@ const SingleBody = styled.div`
 
 const Info = styled.div`
   width: 70%;
-  font-size: 20px;
+  font-size: 1vw;
 
   h2 {
-    font-size: 100px;
+    font-size: 4vw;
     margin-bottom: 20px;
   }
 `;
