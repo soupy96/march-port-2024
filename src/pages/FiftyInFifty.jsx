@@ -1,10 +1,13 @@
 import { useEffect } from 'react';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Github from '../assets/imgs/github.svg';
 import Website from '../assets/imgs/website.svg';
 import FiftyImg from '../assets/imgs/fifty-in-fifty-large.webp';
+
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function FiftyInFifty() {
   useEffect(() => {
@@ -19,7 +22,11 @@ function FiftyInFifty() {
       <ProjectBox>
         <TitleMainImg>
           <h1>Fifty In Fifty</h1>
-          <img src={FiftyImg} />
+          <LazyLoadImage
+            alt='Screenshot of my Fifty Javascript Projects in Fifty Days website'
+            src={FiftyImg}
+            effect='blur'
+          />
         </TitleMainImg>
         <ProjectInfo>
           <ProjectLinks>

@@ -5,6 +5,9 @@ import { Helmet } from 'react-helmet';
 import Github from '../assets/imgs/github.svg';
 import Website from '../assets/imgs/website.svg';
 import UpdraftImg from '../assets/imgs/blackridge-large.webp';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function Updraft() {
   useEffect(() => {
@@ -19,7 +22,11 @@ function Updraft() {
       <ProjectBox>
         <TitleMainImg>
           <h1>Updraft</h1>
-          <img src={UpdraftImg} />
+          <LazyLoadImage
+            alt='Screenshot of my updraft website'
+            src={UpdraftImg}
+            effect='blur'
+          />
         </TitleMainImg>
         <ProjectInfo>
           <ProjectLinks>

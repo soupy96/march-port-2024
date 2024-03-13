@@ -1,10 +1,13 @@
 import { useEffect } from 'react';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Github from '../assets/imgs/github.svg';
 import Website from '../assets/imgs/website.svg';
 import SkullImg from '../assets/imgs/skull-split-large.webp';
+
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function Skull() {
   useEffect(() => {
@@ -19,7 +22,11 @@ function Skull() {
       <ProjectBox>
         <TitleMainImg>
           <h1>Skull Split</h1>
-          <img src={SkullImg} />
+          <LazyLoadImage
+            alt='Screenshot of my skull split gaming website'
+            src={SkullImg}
+            effect='blur'
+          />
         </TitleMainImg>
         <ProjectInfo>
           <ProjectLinks>

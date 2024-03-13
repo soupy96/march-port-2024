@@ -1,9 +1,12 @@
 import { useEffect } from 'react';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Website from '../assets/imgs/website.svg';
 import HockeyImg from '../assets/imgs/prohockey-large.jpg.webp';
+
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function Hockey() {
   useEffect(() => {
@@ -18,7 +21,11 @@ function Hockey() {
       <ProjectBox>
         <TitleMainImg>
           <h1>The Pro Hockey Group</h1>
-          <img src={HockeyImg} />
+          <LazyLoadImage
+            alt='Screenshot of The Pro Hockey Groups website'
+            src={HockeyImg}
+            effect='blur'
+          />
         </TitleMainImg>
         <ProjectInfo>
           <ProjectLinks>

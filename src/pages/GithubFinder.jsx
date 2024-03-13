@@ -1,10 +1,13 @@
 import { useEffect } from 'react';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Github from '../assets/imgs/github.svg';
 import Website from '../assets/imgs/website.svg';
 import GithubImg from '../assets/imgs/github-finder-large.webp';
+
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function GithubFinder() {
   useEffect(() => {
@@ -19,7 +22,11 @@ function GithubFinder() {
       <ProjectBox>
         <TitleMainImg>
           <h1>Github Finder</h1>
-          <img src={GithubImg} />
+          <LazyLoadImage
+            alt='Screenshot of my Github Finder website'
+            src={GithubImg}
+            effect='blur'
+          />
         </TitleMainImg>
         <ProjectInfo>
           <ProjectLinks>

@@ -1,9 +1,12 @@
 import { useEffect } from 'react';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Website from '../assets/imgs/website.svg';
 import JimImg from '../assets/imgs/jim-chapman-large.webp';
+
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function JimChapman() {
   useEffect(() => {
@@ -18,7 +21,11 @@ function JimChapman() {
       <ProjectBox>
         <TitleMainImg>
           <h1>Jim Chapman</h1>
-          <img src={JimImg} />
+          <LazyLoadImage
+            alt='Screenshot of Jim Chapmans website'
+            src={JimImg}
+            effect='blur'
+          />
         </TitleMainImg>
         <ProjectInfo>
           <ProjectLinks>

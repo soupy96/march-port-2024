@@ -1,10 +1,13 @@
 import { useEffect } from 'react';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Github from '../assets/imgs/github.svg';
 import Website from '../assets/imgs/website.svg';
 import TodoImg from '../assets/imgs/todo-app-large.webp';
+
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function Todo() {
   useEffect(() => {
@@ -19,7 +22,11 @@ function Todo() {
       <ProjectBox>
         <TitleMainImg>
           <h1>Todo App</h1>
-          <img src={TodoImg} />
+          <LazyLoadImage
+            alt='Screenshot of my todo app'
+            src={TodoImg}
+            effect='blur'
+          />
         </TitleMainImg>
         <ProjectInfo>
           <ProjectLinks>
