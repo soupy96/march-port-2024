@@ -26,7 +26,11 @@ function Footer() {
         </a>
       </Marquee>
       <BackToTop onClick={BackToTopFunc}>
-        <Arrow className='arrow' src={BackToTopArrow} />
+        <Arrow
+          className='arrow'
+          src={BackToTopArrow}
+          alt='Back to Top Arrow Icon'
+        />
       </BackToTop>
       <Socials>
         <a
@@ -34,10 +38,10 @@ function Footer() {
           rel='nofollow'
           target='_blank'
         >
-          <SocialImgs src={LinkedIn} />
+          <SocialImgs src={LinkedIn} alt='LinkedIn social Icon' />
         </a>
         <a href='https://github.com/soupy96' rel='nofollow' target='_blank'>
-          <SocialImgs src={Github} />
+          <SocialImgs src={Github} alt='Github social Icon' />
         </a>
       </Socials>
     </FooterBox>
