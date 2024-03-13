@@ -52,15 +52,15 @@ const FooterBox = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 500px;
+  height: 45vh;
   background-color: #f27830;
 `;
 
 const BackToTop = styled.div`
   border-radius: 50%;
   border: 1px #f3e1c2 solid;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,18 +81,19 @@ const Arrow = styled.img`
   filter: invert(99%) sepia(3%) saturate(3199%) hue-rotate(319deg)
     brightness(99%) contrast(93%);
   transition: filter 0.5s;
+  width: 1.5vw;
 `;
 
 const Socials = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 200px;
+  width: 300px;
   height: 100px;
 `;
 
 const SocialImgs = styled.img`
-  width: 35px;
+  width: 75px;
   filter: invert(99%) sepia(3%) saturate(3199%) hue-rotate(319deg)
     brightness(99%) contrast(93%);
   transform: translateY(0px);

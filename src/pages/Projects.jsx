@@ -16,7 +16,7 @@ function Projects() {
       <h1>Showcase</h1>
       <div className='projectbox'>
         <Link to='/todo'>
-          <div className='card-page todo-card'>
+          <div className='card todo-card'>
             <Info>
               <p>Todo App</p>
               <DotBox />
@@ -24,7 +24,7 @@ function Projects() {
           </div>
         </Link>
         <Link to='/skull'>
-          <div className='card-page skull-split-card'>
+          <div className='card skull-split-card'>
             <Info>
               <p>Skull Split</p>
               <DotBox />
@@ -32,7 +32,7 @@ function Projects() {
           </div>
         </Link>
         <Link to='/hockey'>
-          <div className='card-page hockey-card'>
+          <div className='card hockey-card'>
             <Info>
               <p>The Pro Hockey Group</p>
               <DotBox />
@@ -40,7 +40,7 @@ function Projects() {
           </div>
         </Link>
         <Link to='/jim-chapman'>
-          <div className='card-page jim-chapman'>
+          <div className='card jim-chapman'>
             <Info>
               <p>Jim Chapman</p>
               <DotBox />
@@ -48,7 +48,7 @@ function Projects() {
           </div>
         </Link>
         <Link to='/github-finder'>
-          <div className='card-page github-finder'>
+          <div className='card github-finder'>
             <Info>
               <p>Github Finder</p>
               <DotBox />
@@ -56,7 +56,7 @@ function Projects() {
           </div>
         </Link>
         <Link to='/fifty-in-fifty'>
-          <div className='card-page fifty-in-fifty'>
+          <div className='card fifty-in-fifty'>
             <Info>
               <p>Fifty In Fifty</p>
               <DotBox />
@@ -64,7 +64,7 @@ function Projects() {
           </div>
         </Link>
         <Link to='/updraft'>
-          <div className='card-page updraft'>
+          <div className='card updraft'>
             <Info>
               <p>Updraft</p>
               <DotBox />
@@ -80,7 +80,7 @@ const MainProjectBox = styled.div`
   margin-bottom: 150px;
 
   h1 {
-    font-size: 5rem;
+    font-size: 5vw;
     font-family: 'Source Serif 4', serif;
     margin: 50px 0px;
     text-align: center;
@@ -95,7 +95,6 @@ const Info = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.5rem;
 `;
 
 const DotBox = styled.span`
