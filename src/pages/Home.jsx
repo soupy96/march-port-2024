@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
+import Favicon from 'react-favicon';
 
 import Hero from '../components/Hero';
 import Body from '../components/Body';
@@ -31,6 +32,7 @@ function MainPage() {
           content='A young web developer with heart!'
         />
         <meta name='twitter:card' content='summary_large_image' />
+        <Favicon url='https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/call-me-hand.png' />
       </Helmet>
       <Hero />
       <Body />
