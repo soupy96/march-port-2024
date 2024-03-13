@@ -80,9 +80,10 @@ const BodyBox = styled.div`
 
 const NumberSide = styled.div`
   width: 40%;
-  font-size: 20vw;
+  font-size: 30vw;
   display: flex;
   justify-content: space-evenly;
+  font-family: 'Bebas Neue', sans-serif;
 
   @media only screen and (max-width: 768px) {
     display: none;
@@ -90,7 +91,7 @@ const NumberSide = styled.div`
 
   p {
     position: sticky;
-    line-height: 450px;
+    line-height: 33vw;
     top: 0;
     overflow: hidden;
   }
@@ -109,25 +110,31 @@ const BodySide = styled.div`
 `;
 
 const SingleBody = styled.div`
-  height: 550px;
+  height: 35vw;
   border-top: 1px solid #401515;
   display: flex;
   justify-content: space-between;
 `;
 
 const Info = styled.div`
-  width: 70%;
+  width: 80%;
   font-size: 1vw;
 
   h2 {
-    font-size: 4vw;
-    margin-bottom: 20px;
+    font-size: 6vw;
+  }
+
+  p {
+    font-size: 1.25vw;
   }
 `;
 
 const Number = styled.div`
   width: 5%;
   text-align: right;
+  font-size: 1vw;
+  font-family: 'Source Serif 4', serif;
+  margin-top: 2vw;
 `;
 
 export default Body;

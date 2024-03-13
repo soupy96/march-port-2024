@@ -39,6 +39,7 @@ function ProjectSection() {
 
 const MainProjectBox = styled.div`
   margin-bottom: 150px;
+  margin-top: 100px;
 `;
 
 const Info = styled.div`
@@ -49,7 +50,6 @@ const Info = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1vw;
 `;
 
 const DotBox = styled.span`

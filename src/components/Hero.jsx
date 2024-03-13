@@ -22,7 +22,7 @@ const HeroBG = styled.div`
   left: 0;
   right: 0;
   top: 76px;
-  height: 100vh;
+  height: calc(100vh - 76px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,8 +30,10 @@ const HeroBG = styled.div`
 
 const HeroOneLiner = styled.h2`
   font-size: 4vw;
-  width: 40%;
-  margin-left: 10%;
+  width: 60%;
+  margin-left: 4vw;
+  font-family: 'Source Serif 4', serif;
+  font-weight: bold;
 `;
 
 export default Hero;

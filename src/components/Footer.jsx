@@ -95,6 +95,12 @@ const SocialImgs = styled.img`
   width: 35px;
   filter: invert(99%) sepia(3%) saturate(3199%) hue-rotate(319deg)
     brightness(99%) contrast(93%);
+  transform: translateY(0px);
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 `;
 
 export default Footer;
