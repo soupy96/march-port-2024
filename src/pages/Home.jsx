@@ -25,14 +25,11 @@ function MainPage() {
           property='og:description'
           content='A young web developer with heart!'
         />
-        <meta property='og:image' content='https://example.com/image.jpg' />
-        <meta property='og:url' content='https://example.com/my-page' />
-        <meta name='twitter:title' content='My Page Title' />
+        <meta name='twitter:title' content='Big Mike' />
         <meta
           name='twitter:description'
-          content='This is a description of my page'
+          content='A young web developer with heart!'
         />
-        <meta name='twitter:image' content='https://example.com/image.jpg' />
         <meta name='twitter:card' content='summary_large_image' />
       </Helmet>
       <Hero />
