@@ -51,7 +51,7 @@ body {
 
 .todo-card {
   background: linear-gradient(rgba(255, 255, 255, 0) 20%, rgb(64, 21, 21) 100%),
-    url('../imgs/todo-app.png');
+    url('../imgs/todo-app.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -59,7 +59,7 @@ body {
 
 .hockey-card {
   background: linear-gradient(rgba(255, 255, 255, 0) 20%, rgb(64, 21, 21) 100%),
-    url('../imgs/prohockey.jpg');
+    url('../imgs/prohockey.webp');
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
@@ -75,7 +75,7 @@ body {
 
 .jim-chapman {
   background: linear-gradient(rgba(255, 255, 255, 0) 20%, rgb(64, 21, 21) 100%),
-    url('../imgs/jim-chapman.png');
+    url('../imgs/jim-chapman.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -83,7 +83,7 @@ body {
 
 .github-finder {
   background: linear-gradient(rgba(255, 255, 255, 0) 20%, rgb(64, 21, 21) 100%),
-    url('../imgs/github-finder.png');
+    url('../imgs/github-finder.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -91,7 +91,7 @@ body {
 
 .fifty-in-fifty {
   background: linear-gradient(rgba(255, 255, 255, 0) 20%, rgb(64, 21, 21) 100%),
-    url('../imgs/fifty-in-fifty.png');
+    url('../imgs/fifty-in-fifty.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -99,7 +99,7 @@ body {
 
 .updraft {
   background: linear-gradient(rgba(255, 255, 255, 0) 20%, rgb(64, 21, 21) 100%),
-    url('../imgs/blackridge.png');
+    url('../imgs/blackridge.webp');
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;

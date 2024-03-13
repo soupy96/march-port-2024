@@ -33,7 +33,6 @@ const NavBox = styled.div`
   align-items: center;
   padding: 20px 0px;
   font-family: 'Source Serif 4', serif;
-  /* font-family: 'Bebas Neue', sans-serif; */
 
   p {
     font-size: 0.75vw;

@@ -15,6 +15,8 @@ function NotFound() {
 const Text = styled.div`
   text-align: center;
   margin: 25% 0px;
+  font-family: 'Source Serif 4', serif;
+  font-size: 5vw;
 `;
 
 export default NotFound;

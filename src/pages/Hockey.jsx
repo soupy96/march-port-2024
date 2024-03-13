@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 
 import Website from '../assets/imgs/website.svg';
-import HockeyImg from '../assets/imgs/prohockey-large.jpg.png';
+import HockeyImg from '../assets/imgs/prohockey-large.jpg.webp';
 
 function Hockey() {
   useEffect(() => {
@@ -61,7 +61,7 @@ const TitleMainImg = styled.div`
   text-align: center;
 
   h1 {
-    font-size: 5rem;
+    font-size: 5vw;
     font-family: 'Source Serif 4', serif;
     margin: 50px 0px;
   }
@@ -91,6 +91,7 @@ const ProjectLinks = styled.div`
   border-bottom: 1px solid #401515;
   padding: 10px 0px;
   height: 150px;
+  font-family: 'Source Serif 4', serif;
 
   @media only screen and (max-width: 768px) {
     position: relative;
@@ -110,6 +111,12 @@ const ProjectLinks = styled.div`
     margin-right: 10px;
     filter: invert(9%) sepia(15%) saturate(5622%) hue-rotate(331deg)
       brightness(99%) contrast(94%);
+    transform: translateY(0px);
+    transition: transform 0.5s;
+  }
+
+  img:hover {
+    transform: translateY(-5px);
   }
 `;
 

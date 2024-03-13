@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import hero from '../assets/imgs/oleg-laptev-unsplash.png';
+import hero from '../assets/imgs/oleg-laptev-unsplash.webp';
 
 // TODO
 // make text look nice

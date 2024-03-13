@@ -22,7 +22,7 @@ function Footer() {
         gradientWidth={50}
       >
         <a href='mailto:michael.campbell14@gmail.com'>
-          michael.campbell14@gmail.com
+          michael.campbell14@gmail.com&nbsp;
         </a>
       </Marquee>
       <BackToTop onClick={BackToTopFunc}>
