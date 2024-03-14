@@ -148,7 +148,6 @@ const ProjectLinks = styled.div`
     position: static;
     width: 100%;
     margin-bottom: 50px;
-    /* padding: 0; */
     height: auto;
     align-items: center;
     justify-content: flex-end;
