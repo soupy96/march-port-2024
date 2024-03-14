@@ -28,6 +28,10 @@ const HeroBG = styled.div`
     background-position: right;
   }
 
+  @media only screen and (max-width: 900px) {
+    background-position: left;
+  }
+
   @media only screen and (max-width: 425px) {
     background-position: left;
   }

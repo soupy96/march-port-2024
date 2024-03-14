@@ -160,6 +160,18 @@ const BigNumber = styled.div`
   font-family: 'Bebas Neue', sans-serif;
   display: flex;
   justify-content: center;
+
+  @media only screen and (max-width: 1440px) {
+    font-size: 30rem;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    font-size: 25rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const RightInfo = styled.div`
@@ -169,6 +181,10 @@ const RightInfo = styled.div`
   display: flex;
   justify-content: space-between;
   width: 60%;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const Info = styled.div`
@@ -176,12 +192,53 @@ const Info = styled.div`
 
   h2 {
     font-size: 150px;
-    /* line-height: 200px; */
     margin-bottom: 50px;
   }
 
   p {
     font-size: 30px;
+  }
+
+  @media only screen and (max-width: 1440px) {
+    h2 {
+      font-size: 100px;
+    }
+
+    p {
+      font-size: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    h2 {
+      font-size: 65px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+
+    h2 {
+      font-size: 65px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    h2 {
+      font-size: 55px;
+    }
+
+    p {
+      font-size: 20px;
+    }
   }
 `;
 
