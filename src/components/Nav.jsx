@@ -11,11 +11,11 @@ function Nav() {
 
   return (
     <NavBox>
-      <ViewMoreProjects>
+      <HomeTitle>
         <h1 className='text-3xl font-bold '>
           <Link to='/'>Michael Campbell </Link>
         </h1>
-      </ViewMoreProjects>
+      </HomeTitle>
       <p>
         {dateState.toLocaleString('en-US', {
           hour: 'numeric',
@@ -35,11 +35,17 @@ const NavBox = styled.div`
   font-family: 'Source Serif 4', serif;
 
   p {
-    font-size: 0.75vw;
+    font-size: 1.8rem;
+  }
+
+  @media only screen and (max-width: 375px) {
+    p {
+      font-size: 1.5rem;
+    }
   }
 `;
 
-const ViewMoreProjects = styled.div`
+const HomeTitle = styled.div`
   a {
     color: inherit;
     text-decoration: underline 0.15em rgba(242, 120, 48, 0);
@@ -48,6 +54,12 @@ const ViewMoreProjects = styled.div`
 
   a:hover {
     text-decoration-color: rgba(242, 120, 48, 1);
+  }
+
+  @media only screen and (max-width: 375px) {
+    h1 {
+      font-size: 1.5rem;
+    }
   }
 `;
 

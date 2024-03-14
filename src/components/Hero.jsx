@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 import hero from '../assets/imgs/oleg-laptev-unsplash.webp';
 
-// TODO
-// make text look nice
-
 function Hero() {
   return (
     <HeroBG>
@@ -26,14 +23,45 @@ const HeroBG = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media only screen and (max-width: 1024px) {
+    background-position: right;
+  }
+
+  @media only screen and (max-width: 425px) {
+    background-position: left;
+  }
 `;
 
 const HeroOneLiner = styled.h2`
-  font-size: 4vw;
+  font-size: 6rem;
   width: 60%;
-  margin-left: 4vw;
+  margin-left: 100px;
   font-family: 'Source Serif 4', serif;
   font-weight: bold;
+
+  @media only screen and (max-width: 1440px) {
+    font-size: 4rem;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    margin-left: 50px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 3rem;
+  }
+
+  @media only screen and (max-width: 425px) {
+    font-size: 2rem;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 375px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export default Hero;

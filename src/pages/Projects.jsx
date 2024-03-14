@@ -80,10 +80,28 @@ const MainProjectBox = styled.div`
   margin-bottom: 150px;
 
   h1 {
-    font-size: 5vw;
+    font-size: 150px;
     font-family: 'Source Serif 4', serif;
     margin: 50px 0px;
     text-align: center;
+  }
+
+  @media only screen and (max-width: 1440px) {
+    h1 {
+      font-size: 125px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 100px;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    h1 {
+      font-size: 75px;
+    }
   }
 `;
 

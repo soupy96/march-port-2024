@@ -9,6 +9,8 @@ function Body() {
         {/* have each number slide out and the new number slide in */}
         <LeftSide>
           <p>0</p>
+          <p>0</p>
+          <p>0</p>
         </LeftSide>
         <RightSide>
           <p>1</p>
@@ -80,37 +82,34 @@ const BodyBox = styled.div`
 
 const NumberSide = styled.div`
   width: 40%;
-  font-size: 30vw;
+  font-size: 45rem;
   display: flex;
   justify-content: space-evenly;
   font-family: 'Bebas Neue', sans-serif;
-
-  @media only screen and (max-width: 768px) {
-    display: none;
-  }
-
-  p {
-    position: sticky;
-    line-height: 33vw;
-    top: 0;
-    overflow: hidden;
-  }
 `;
 
-const LeftSide = styled.div``;
+const LeftSide = styled.div`
+  position: sticky;
+  line-height: 850px;
+  top: 0;
+  overflow: hidden;
+`;
 
-const RightSide = styled.div``;
+const RightSide = styled.div`
+  background-color: #f2e1c2;
+  position: sticky;
+  line-height: 850px;
+  top: 0;
+  overflow: hidden;
+`;
 
 const BodySide = styled.div`
   width: 60%;
-
-  @media only screen and (max-width: 768px) {
-    width: 100%;
-  }
 `;
 
 const SingleBody = styled.div`
-  height: 35vw;
+  padding-top: 100px;
+  padding-bottom: 150px;
   border-top: 1px solid #401515;
   display: flex;
   justify-content: space-between;
@@ -118,23 +117,24 @@ const SingleBody = styled.div`
 
 const Info = styled.div`
   width: 80%;
-  font-size: 1vw;
 
   h2 {
-    font-size: 6vw;
+    font-size: 150px;
+    line-height: 200px;
+    margin-bottom: 50px;
   }
 
   p {
-    font-size: 1.25vw;
+    font-size: 30px;
   }
 `;
 
 const Number = styled.div`
   width: 5%;
   text-align: right;
-  font-size: 1vw;
+  font-size: 30px;
   font-family: 'Source Serif 4', serif;
-  margin-top: 2vw;
+  margin-top: 40px;
 `;
 
 export default Body;

@@ -39,7 +39,6 @@ function ProjectSection() {
 
 const MainProjectBox = styled.div`
   margin-bottom: 150px;
-  margin-top: 100px;
 `;
 
 const Info = styled.div`
@@ -62,7 +61,7 @@ const ViewMoreProjects = styled.div`
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  font-size: 0.75vw;
+  font-size: 20px;
   margin-top: 10px;
 
   a::after {
@@ -100,6 +99,10 @@ const ViewMoreProjects = styled.div`
   a:hover::after,
   a:focus::after {
     transform: translate3d(0, 0, 0);
+  }
+
+  @media only screen and (max-width: 1024px) {
+    width: 85vw;
   }
 `;
 

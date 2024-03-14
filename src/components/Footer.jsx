@@ -56,7 +56,7 @@ const FooterBox = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 45vh;
+  height: 600px;
   background-color: #f27830;
 `;
 
@@ -85,7 +85,7 @@ const Arrow = styled.img`
   filter: invert(99%) sepia(3%) saturate(3199%) hue-rotate(319deg)
     brightness(99%) contrast(93%);
   transition: filter 0.5s;
-  width: 1.5vw;
+  width: 40px;
 `;
 
 const Socials = styled.div`

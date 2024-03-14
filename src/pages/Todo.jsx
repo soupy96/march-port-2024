@@ -70,9 +70,27 @@ const TitleMainImg = styled.div`
   text-align: center;
 
   h1 {
-    font-size: 5vw;
+    font-size: 150px;
     font-family: 'Source Serif 4', serif;
     margin: 50px 0px;
+  }
+
+  @media only screen and (max-width: 1440px) {
+    h1 {
+      font-size: 125px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 100px;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    h1 {
+      font-size: 75px;
+    }
   }
 `;
 
@@ -82,6 +100,11 @@ const ProjectInfo = styled.div`
   margin: 50px 0px;
   position: relative;
   height: 100%;
+
+  @media only screen and (max-width: 1024px) {
+    flex-direction: column;
+    margin-top: 0;
+  }
 
   @media only screen and (max-width: 768px) {
     flex-wrap: wrap;
@@ -95,19 +118,12 @@ const ProjectLinks = styled.div`
   flex-wrap: wrap;
   position: sticky;
   top: 50px;
-  width: 10%;
+  width: 200px;
   border-top: 1px solid #401515;
   border-bottom: 1px solid #401515;
   padding: 10px 0px;
   height: 150px;
   font-family: 'Source Serif 4', serif;
-
-  @media only screen and (max-width: 768px) {
-    position: relative;
-    width: 100%;
-    top: 25px;
-    margin-bottom: 50px;
-  }
 
   p {
     font-size: 1.5rem;
@@ -127,18 +143,52 @@ const ProjectLinks = styled.div`
   img:hover {
     transform: translateY(-5px);
   }
+
+  @media only screen and (max-width: 1024px) {
+    position: static;
+    width: 100%;
+    margin-bottom: 50px;
+    /* padding: 0; */
+    height: auto;
+    align-items: center;
+    justify-content: flex-end;
+    border: 0;
+
+    p {
+      width: auto;
+      margin-right: 20px;
+      display: none;
+    }
+
+    img {
+      margin-right: 20px;
+    }
+  }
 `;
 
 const ProjectBody = styled.div`
   width: 60%;
 
-  @media only screen and (max-width: 768px) {
-    width: 100%;
-  }
-
   p {
     font-size: 3rem;
     margin-bottom: 30px;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    width: 100%;
+
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+  }
+
+  @media only screen and (max-width: 425px) {
+    p {
+      font-size: 1.5rem;
+    }
   }
 `;
 
