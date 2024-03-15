@@ -48,9 +48,38 @@ function Updraft() {
           </ProjectLinks>
           <ProjectBody>
             <p>
-              This project was first done as a technical test for a job
-              interview but, after getting said job, turned into a more refined
-              website to advertise to clients.
+              I initially undertook this project as a technical test for a job
+              interview. However, following my successful employment, I
+              transformed it into a refined website intended to showcase our
+              services to potential clients. The creation process commenced with
+              an in-depth analysis of the project requirements and target
+              audience, allowing me to tailor the website's design and
+              functionality to effectively communicate our offerings.
+            </p>
+            <p>
+              Throughout the development process, I prioritized user-centric
+              design principles, incorporating easy to use navigation and clear
+              messaging to guide visitors through the website seamlessly.
+              Additionally, I created features such as call-to-action buttons to
+              encourage engagement and conversion.
+            </p>
+            <p>
+              With the website now live, my focus remains on monitoring its
+              performance and gathering feedback from users to further refine
+              and optimize the platform. By leveraging this project as a
+              powerful marketing tool, we aim to attract and convert potential
+              clients, showcasing our expertise and capabilities in the field.
+            </p>
+            <p>
+              Since completing this project, my journey as a developer has been
+              marked by significant growth and learning. Each project, including
+              this one, has served as a stepping stone towards honing my skills
+              and expanding my knowledge in web development. My latest project
+              showcases not only my continued progress but also my ability to
+              apply newfound knowledge and insights to create even more robust
+              and innovative solutions. As I continue to evolve as a developer,
+              I am excited to tackle new challenges and push the boundaries of
+              what I can achieve in the world of web development.
             </p>
           </ProjectBody>
         </ProjectInfo>

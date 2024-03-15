@@ -48,21 +48,42 @@ function Skull() {
           </ProjectLinks>
           <ProjectBody>
             <p>
-              After learning the basics of ReactJS I took it upon myself to
-              create my first website using what I had learned. Skull Split is a
-              website that mockup of a fake video game. With every year that
-              passes, new technologies emerge that change the way the industry
-              does things. ReactJS sure is one of them. This is where I started
-              to learn about ReactJS.
+              My goal for this website was to create an immersive platform that
+              caters to the gaming community's diverse interests. From the
+              onset, my goal was to curate a space that offers engaging content,
+              resources, and possibly interactive features to enrich the gaming
+              experience.
             </p>
             <p>
-              While creating this website I used NPM to take advantage of the
-              styled-components, react-router-dom, react-burger-menu,
-              swiper/react node modules. I learned to use a Layout.js file that
-              uses the same components on every page like the navbar, footer and
-              sticky socials while outputing each pages unique content. I've
-              learned how to use re-usable components while using flexbox and
-              brushing up on my CSS grid.
+              The creation process unfolded through a series of deliberate
+              steps. It commenced with thorough conceptualization and planning,
+              where I identified the target audience and outlined the specific
+              needs and preferences the website seeks to address within the
+              gaming community. With a clear vision in mind, I transitioned into
+              the design phase, sculpting the user interface (UI) and user
+              experience (UX) to provide an engaging and intuitive platform for
+              users.
+            </p>
+            <p>
+              Development was an exciting phase, turning the design into
+              functional components and features. Each section of the website
+              was meticulously crafted to enhance the overall gaming experience.
+              Rigorous testing followed suit, ensuring that the website operates
+              flawlessly and delivers on its promises before deployment.
+            </p>
+            <p>
+              With the website primed and ready, deployment to Netlify was the
+              final step in making it accessible to gamers worldwide. To better
+              update and develop the website for future plans, I streamlined
+              updates and enhancements from the GitHub repository to the live
+              website seamlessly.
+            </p>
+            <p>
+              I welcome feedback and suggestions from gamers, as they play a
+              pivotal role in shaping the future direction of the website. My
+              mission is to continue refining and expanding the features of the
+              website, ensuring that it remains a trusted destination for gamers
+              to connect, explore, and indulge in their passion for gaming.
             </p>
           </ProjectBody>
         </ProjectInfo>

@@ -47,10 +47,39 @@ function Todo() {
             </a>
           </ProjectLinks>
           <ProjectBody>
-            <p>A Todo App to practice managing state.</p>
             <p>
-              A Todo App where you have full CRUD functionality on each todo.
-              This was created with useContext, useReducer and useState.{' '}
+              My goal for this project was pretty simple: to create a tool that
+              helps people keep track of their tasks easily. It all started with
+              planning out what features I wanted—like adding, updating
+              deleting, and reading tasks form local storage—so the website
+              would be super helpful for anyone using it.
+            </p>
+            <p>
+              Then came the fun part: designing how everything would look and
+              work. I spent time figuring out the best colors, layouts, and
+              buttons to make sure the website was easy to use and looked nice.
+              I decided to use Material-UI, a handy library, to help me create a
+              sleek and modern design. With its pre-made components and styles,
+              I could focus more on making the website user-friendly and less on
+              reinventing the wheel.
+            </p>
+            <p>
+              After that, I got into building the website itself. I used React
+              to make it happen. With React, I could break down the website into
+              smaller, reusable parts. I created different components for tasks,
+              task lists, and buttons, among others. To make things look better
+              and follow a consistent design, I used Material-UI, a library with
+              pre-made components and styles. This helped me save time and
+              ensure a polished look for the website. Of course, I made sure
+              everything worked smoothly together, and I tested it all
+              rigorously to catch any bugs.
+            </p>
+            <p>
+              Upon reaching deployment, I entrusted the website to Netlify,
+              configuring continuous deployment through integration with the
+              GitHub repository. This seamless deployment process ensured that
+              the todo list application was readily accessible to users, ready
+              to streamline their task management workflows.
             </p>
           </ProjectBody>
         </ProjectInfo>

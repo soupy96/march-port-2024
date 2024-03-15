@@ -40,15 +40,48 @@ function Hockey() {
           </ProjectLinks>
           <ProjectBody>
             <p>
-              An online, queryable website that pulls information about hockey
-              players from around the globe and displays it as an interactive
-              hockey card.
+              The Pro Hockey Group serves as a stats hub for all things related
+              to professional hockey, catering to fans, players, and enthusiasts
+              alike. The website boasts of features like, player profiles, team
+              and player statistics.
             </p>
             <p>
               This project started from the ground up. As the primary developer
               for this project, I developed and currently maintain the code that
               queries various APIs to sort and display data based on what player
               was queried.
+            </p>
+            <p>
+              While using JavaScript, I created a feature that seamlessly
+              fetches player data from two different APIs. In receiving data
+              back from the APIs the creation of virtual hockey cards was
+              possible. The cards displayed comprehensive player profiles filled
+              with stats, accolades, and personal information. Despite the
+              challenges posed by the WordPress environment, I adeptly navigated
+              through intricacies, ensuring smooth integration and optimal
+              performance of these dynamic elements within the content
+              management system.
+            </p>
+            <p>
+              After receiving our website design from our talented designer, I
+              embarked on the development journey, translating these visual
+              blueprints into tangible digital experiences. Working within the
+              WordPress ecosystem, I brought the designer's vision to life,
+              ensuring pixel-perfect implementation of every detail. Using HTML,
+              CSS, and JavaScript, I created the website's frontend, matching
+              each element to the designer's specifications. This collaborative
+              effort culminated in the creation of a visually stunning and
+              navigable platform.
+            </p>
+            <p>
+              After development was completed, I facilitated the deployment of
+              the website to an AWS Lightsail server, augmenting its scalability
+              and resilience with Elastic Load Balancing. The integration of
+              Elastic Load Balancing optimizes resource utilization,
+              distributing incoming traffic across multiple instances for
+              enhanced performance and reliability. This deployment architecture
+              not only bolsters the website's stability but also lays the
+              foundation for future scalability as user demand grows.
             </p>
           </ProjectBody>
         </ProjectInfo>

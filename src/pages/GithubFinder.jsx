@@ -48,9 +48,33 @@ function GithubFinder() {
           </ProjectLinks>
           <ProjectBody>
             <p>
-              This is a cool project that I first discovered through a favourite
-              online educator. I followed his course, and this was one of the
-              projects that we made along with his lessons and tests.
+              I wanted to create a user-friendly platform for exploring GitHub
+              profiles effortlessly. The process began with careful planning,
+              identifying the core functionalities required to allow seamless
+              profile searching on GitHub. Leveraging modern web development
+              technologies, particularly React, I created the website's frontend
+              to provide an intuitive and responsive user interface.
+            </p>
+            <p>
+              Next, I leveraged the GitHub API to fetch and display user
+              profiles dynamically. Through the use of JavaScript, I made it
+              possible to retrieve and display any public GitHub users
+              information.
+            </p>
+            <p>
+              To ensure the website's robustness and performance lots of testing
+              was done across different devices and browsers. Once development
+              was complete, I deployed the website to Netlify, leveraging its
+              hosting capabilities to make the platform accessible to users
+              worldwide.
+            </p>
+            <p>
+              Overall, this project was to simplify the process of exploring
+              GitHub profiles, providing users with a convenient and efficient
+              tool for accessing GitHub information. Through planning and
+              thorough development, I aimed to deliver a seamless and
+              user-friendly experience for anyone wanting to discover GitHub
+              users and their contributions.
             </p>
           </ProjectBody>
         </ProjectInfo>

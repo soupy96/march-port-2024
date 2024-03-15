@@ -36,14 +36,40 @@ function JimChapman() {
           </ProjectLinks>
           <ProjectBody>
             <p>
-              A basic WordPress blog site where Jim would write blog posts about
-              his life or his opinions on the political scene in Canada. He also
-              is advertising his current and upcoming songs and novels.
+              For this website I needed to leverage WordPress to create a
+              versatile platform capable of hosting multiple blogs. This
+              endeavor began with lots of planning to structure the site
+              effectively and identify the necessary functionalities to better
+              serve Jim Chapman's audience.
             </p>
             <p>
-              Creating several custom blog post types for multiple different
-              blogs. Using Contact Form 7 and Google recaptcha for his contact
-              form and user comments.
+              Next, I started the design of the website, collaborating closely
+              with Jim Chapman to bring his vision to life. While trying to
+              modernize his website while keeping its rustic feel, I created and
+              developed custom child themes and layouts that worked with
+              WordPress, maintaining a cohesive design across the various blogs.
+              Every aspect, from typography to color schemes, was carefully
+              chosen to reflect Jim Chapman's brand and resonate with his
+              audience.
+            </p>
+            <p>
+              Development started by the implementing custom features and
+              functionalities tailored to each blog's unique requirements.
+              Whether integrating custom post types, user comment feature, or
+              optimizing performance for seamless browsing experiences, I coded
+              and tested each element to ensure optimal functionality and user
+              experience. Additionally, I prioritized maintaining a
+              user-friendly backend interface within WordPress, ensuring it
+              remained easy to use and accessible even for less tech-savvy
+              users.
+            </p>
+            <p>
+              With development complete, I facilitated the deployment of the
+              website to a AWS Lightsail instance, ensuring high availability
+              and performance for Jim Chapman's audience. Overall, the website
+              represents a collaborative effort aimed at delivering a engaging
+              digital platform for Jim Chapman's audience, leveraging the power
+              and versatility of WordPress to accommodate multiple blogs.
             </p>
           </ProjectBody>
         </ProjectInfo>
