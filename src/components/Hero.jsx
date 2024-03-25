@@ -1,8 +1,8 @@
-import styled from 'styled-components';
-import hero from '../assets/imgs/oleg-laptev-unsplash.webp';
-
 import React, { useEffect, useRef } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
+
+import styled from 'styled-components';
+import hero from '../assets/imgs/oleg-laptev-unsplash.webp';
 
 function Hero() {
   const ref = useRef(null);
