@@ -41,7 +41,7 @@ function ProjectSection() {
             animate={mainControls1}
             transition={{
               duration: 0.5,
-              delay: 0.2,
+              delay: 0.4,
             }}
           >
             <div className='card todo-card' ref={ref1}>
@@ -62,7 +62,7 @@ function ProjectSection() {
             animate={mainControls2}
             transition={{
               duration: 0.5,
-              delay: 0.4,
+              delay: 0.6,
             }}
           >
             <div className='card skull-split-card'>
@@ -83,7 +83,7 @@ function ProjectSection() {
             animate={mainControls3}
             transition={{
               duration: 0.5,
-              delay: 0.6,
+              delay: 0.8,
             }}
           >
             <div className='card hockey-card'>
