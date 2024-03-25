@@ -59,7 +59,7 @@ function ProjectSection() {
               visible: { opacity: 1, y: 1 },
             }}
             initial='hidden'
-            animate={mainControls1}
+            animate={mainControls2}
             transition={{
               duration: 0.5,
               delay: 0.4,
@@ -80,7 +80,7 @@ function ProjectSection() {
               visible: { opacity: 1, y: 1 },
             }}
             initial='hidden'
-            animate={mainControls1}
+            animate={mainControls3}
             transition={{
               duration: 0.5,
               delay: 0.6,
