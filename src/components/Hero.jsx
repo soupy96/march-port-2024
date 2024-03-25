@@ -1,13 +1,40 @@
 import styled from 'styled-components';
 import hero from '../assets/imgs/oleg-laptev-unsplash.webp';
 
+import React, { useEffect, useRef } from 'react';
+import { motion, useInView, useAnimation } from 'framer-motion';
+
 function Hero() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const mainControls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start('visible');
+    }
+  }, [isInView]);
+
   return (
-    <HeroBG>
-      <HeroOneLiner>
-        Crafting intuitive user experiences with pixel-perfect precision to
-        bring digital visions to life.
-      </HeroOneLiner>
+    <HeroBG ref={ref}>
+      <motion.div
+        variants={{
+          hidden: { opacity: 0, y: 75 },
+          visible: { opacity: 1, y: 1 },
+        }}
+        initial='hidden'
+        animate={mainControls}
+        transition={{
+          duration: 0.5,
+          delay: 0.25,
+        }}
+      >
+        <HeroOneLiner>
+          Crafting intuitive user experiences with pixel-perfect precision to
+          bring digital visions to life.
+        </HeroOneLiner>
+      </motion.div>
     </HeroBG>
   );
 }
