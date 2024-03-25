@@ -37,14 +37,14 @@ function Body() {
         <BigNumber ref={ref1}>
           <motion.div
             variants={{
-              hidden: { opacity: 0, y: 75 },
-              visible: { opacity: 1, y: 1 },
+              hidden: { opacity: 0, x: 75 },
+              visible: { opacity: 1, x: 1 },
             }}
             initial='hidden'
             animate={mainControls1}
             transition={{
               duration: 0.5,
-              delay: 0.25,
+              delay: 0.6,
             }}
           >
             <p>01</p>
@@ -54,14 +54,14 @@ function Body() {
           <Info ref={ref1}>
             <motion.div
               variants={{
-                hidden: { opacity: 0, y: 75 },
-                visible: { opacity: 1, y: 1 },
+                hidden: { opacity: 0, x: 75 },
+                visible: { opacity: 1, x: 1 },
               }}
               initial='hidden'
               animate={mainControls1}
               transition={{
                 duration: 0.5,
-                delay: 0.25,
+                delay: 0.6,
               }}
             >
               <h2>Career pursuit</h2>
@@ -85,14 +85,14 @@ function Body() {
         <BigNumber ref={ref2}>
           <motion.div
             variants={{
-              hidden: { opacity: 0, y: 75 },
-              visible: { opacity: 1, y: 1 },
+              hidden: { opacity: 0, x: -75 },
+              visible: { opacity: 1, x: 1 },
             }}
             initial='hidden'
             animate={mainControls2}
             transition={{
               duration: 0.5,
-              delay: 0.25,
+              delay: 0.6,
             }}
           >
             <p>02</p>
@@ -102,14 +102,14 @@ function Body() {
           <Info ref={ref2}>
             <motion.div
               variants={{
-                hidden: { opacity: 0, y: 75 },
-                visible: { opacity: 1, y: 1 },
+                hidden: { opacity: 0, x: -75 },
+                visible: { opacity: 1, x: 1 },
               }}
               initial='hidden'
               animate={mainControls2}
               transition={{
                 duration: 0.5,
-                delay: 0.25,
+                delay: 0.6,
               }}
             >
               <h2>Passionate innovation</h2>
@@ -135,14 +135,14 @@ function Body() {
         <BigNumber ref={ref3}>
           <motion.div
             variants={{
-              hidden: { opacity: 0, y: 75 },
-              visible: { opacity: 1, y: 1 },
+              hidden: { opacity: 0, x: 75 },
+              visible: { opacity: 1, x: 1 },
             }}
             initial='hidden'
             animate={mainControls3}
             transition={{
               duration: 0.5,
-              delay: 0.25,
+              delay: 0.6,
             }}
           >
             <p>03</p>
@@ -152,14 +152,14 @@ function Body() {
           <Info ref={ref3}>
             <motion.div
               variants={{
-                hidden: { opacity: 0, y: 75 },
-                visible: { opacity: 1, y: 1 },
+                hidden: { opacity: 0, x: 75 },
+                visible: { opacity: 1, x: 1 },
               }}
               initial='hidden'
               animate={mainControls3}
               transition={{
                 duration: 0.5,
-                delay: 0.25,
+                delay: 0.6,
               }}
             >
               <h2>Creative expertise</h2>
