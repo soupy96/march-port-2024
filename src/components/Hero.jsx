@@ -1,30 +1,17 @@
-import React, { useEffect, useRef } from 'react';
-import { motion, useInView, useAnimation } from 'framer-motion';
+import React from 'react';
+import { motion } from 'framer-motion';
 
 import styled from 'styled-components';
 import hero from '../assets/imgs/oleg-laptev-unsplash.webp';
 
 function Hero() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
-  const mainControls = useAnimation();
-
-  useEffect(() => {
-    if (isInView) {
-      mainControls.start('visible');
-    }
-  }, [isInView]);
-
   return (
-    <HeroBG ref={ref}>
+    <HeroBG>
       <motion.div
-        variants={{
-          hidden: { opacity: 0, y: 75 },
-          visible: { opacity: 1, y: 1 },
-        }}
-        initial='hidden'
-        animate={mainControls}
+        initial={{ opacity: 0, y: 75 }}
+        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
         transition={{
           duration: 0.5,
           delay: 0.25,
