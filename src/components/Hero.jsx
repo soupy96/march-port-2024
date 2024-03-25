@@ -1,13 +1,27 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+
 import styled from 'styled-components';
 import hero from '../assets/imgs/oleg-laptev-unsplash.webp';
 
 function Hero() {
   return (
     <HeroBG>
-      <HeroOneLiner>
-        Crafting intuitive user experiences with pixel-perfect precision to
-        bring digital visions to life.
-      </HeroOneLiner>
+      <motion.div
+        initial={{ opacity: 0, y: 75 }}
+        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 0.5,
+          delay: 0.25,
+        }}
+      >
+        <HeroOneLiner>
+          Crafting intuitive user experiences with pixel-perfect precision to
+          bring digital visions to life.
+        </HeroOneLiner>
+      </motion.div>
     </HeroBG>
   );
 }

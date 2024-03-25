@@ -1,27 +1,80 @@
+import React, { useEffect, useRef } from 'react';
+import { motion, useInView, useAnimation } from 'framer-motion';
+
 import styled from 'styled-components';
 
 // TODO
 // have each number slide out and the new number slide in
 
 function Body() {
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
+
+  const isInView1 = useInView(ref1, { once: true });
+  const isInView2 = useInView(ref2, { once: true });
+  const isInView3 = useInView(ref3, { once: true });
+
+  const mainControls1 = useAnimation();
+  const mainControls2 = useAnimation();
+  const mainControls3 = useAnimation();
+
+  useEffect(() => {
+    if (isInView1) {
+      mainControls1.start('visible');
+    }
+    if (isInView2) {
+      mainControls2.start('visible');
+    }
+    if (isInView3) {
+      mainControls3.start('visible');
+    }
+  }, [isInView1, isInView2, isInView3]);
+
   return (
     <BodyBox>
       <RowSection>
-        <BigNumber>
-          <p>01</p>
+        <BigNumber ref={ref1}>
+          <motion.div
+            variants={{
+              hidden: { opacity: 0, y: 75 },
+              visible: { opacity: 1, y: 1 },
+            }}
+            initial='hidden'
+            animate={mainControls1}
+            transition={{
+              duration: 0.5,
+              delay: 0.25,
+            }}
+          >
+            <p>01</p>
+          </motion.div>
         </BigNumber>
         <RightInfo>
-          <Info>
-            <h2>Career pursuit</h2>
-            <p>
-              I'm all about chasing my career dreams while squeezing in time for
-              what I love. Whether it's getting lost in the great outdoors,
-              gaming with friends, or just kicking back with a good book, I'm
-              all about balancing work and play. Connecting with friends over
-              shared interests keeps me grounded, and I'm always up for trying
-              something new. Life's a journey, and I'm just enjoying the ride,
-              one adventure at a time.
-            </p>
+          <Info ref={ref1}>
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, y: 75 },
+                visible: { opacity: 1, y: 1 },
+              }}
+              initial='hidden'
+              animate={mainControls1}
+              transition={{
+                duration: 0.5,
+                delay: 0.25,
+              }}
+            >
+              <h2>Career pursuit</h2>
+              <p>
+                I'm all about chasing my career dreams while squeezing in time
+                for what I love. Whether it's getting lost in the great
+                outdoors, gaming with friends, or just kicking back with a good
+                book, I'm all about balancing work and play. Connecting with
+                friends over shared interests keeps me grounded, and I'm always
+                up for trying something new. Life's a journey, and I'm just
+                enjoying the ride, one adventure at a time.
+              </p>
+            </motion.div>
           </Info>
           <Square>
             <span></span>
@@ -29,22 +82,49 @@ function Body() {
         </RightInfo>
       </RowSection>
       <RowSection>
-        <BigNumber>
-          <p>02</p>
+        <BigNumber ref={ref2}>
+          <motion.div
+            variants={{
+              hidden: { opacity: 0, y: 75 },
+              visible: { opacity: 1, y: 1 },
+            }}
+            initial='hidden'
+            animate={mainControls2}
+            transition={{
+              duration: 0.5,
+              delay: 0.25,
+            }}
+          >
+            <p>02</p>
+          </motion.div>
         </BigNumber>
         <RightInfo>
-          <Info>
-            <h2>Passionate innovation</h2>
-            <p>
-              In the midst of chasing my career dreams and enjoying life's
-              adventures, I've found a true passion for web development. There's
-              something incredibly rewarding about bringing ideas to life online
-              and creating meaningful digital experiences. Whether I'm coding
-              late into the night or collaborating with fellow developers, I'm
-              constantly honing my skills and pushing the boundaries of what's
-              possible. It's a dynamic field that keeps me engaged and inspired,
-              and I can't wait to see where this journey takes me next.
-            </p>
+          <Info ref={ref2}>
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, y: 75 },
+                visible: { opacity: 1, y: 1 },
+              }}
+              initial='hidden'
+              animate={mainControls2}
+              transition={{
+                duration: 0.5,
+                delay: 0.25,
+              }}
+            >
+              <h2>Passionate innovation</h2>
+              <p>
+                In the midst of chasing my career dreams and enjoying life's
+                adventures, I've found a true passion for web development.
+                There's something incredibly rewarding about bringing ideas to
+                life online and creating meaningful digital experiences. Whether
+                I'm coding late into the night or collaborating with fellow
+                developers, I'm constantly honing my skills and pushing the
+                boundaries of what's possible. It's a dynamic field that keeps
+                me engaged and inspired, and I can't wait to see where this
+                journey takes me next.
+              </p>
+            </motion.div>
           </Info>
           <Square>
             <span></span>
@@ -52,89 +132,54 @@ function Body() {
         </RightInfo>
       </RowSection>
       <RowSection>
-        <BigNumber>
-          <p>03</p>
+        <BigNumber ref={ref3}>
+          <motion.div
+            variants={{
+              hidden: { opacity: 0, y: 75 },
+              visible: { opacity: 1, y: 1 },
+            }}
+            initial='hidden'
+            animate={mainControls3}
+            transition={{
+              duration: 0.5,
+              delay: 0.25,
+            }}
+          >
+            <p>03</p>
+          </motion.div>
         </BigNumber>
         <RightInfo>
-          <Info>
-            <h2>Creative expertise</h2>
-            <p>
-              Detail-oriented and creative Front-End Web Developer with 4 years
-              of experience in designing and implementing responsive and
-              user-friendly web applications. Proficient in a wide range of
-              front-end technologies and dedicated to delivering high-quality,
-              visually appealing websites.
-            </p>
-            <br />
-            <br />
-            <p>Let's create captivating online experiences together!</p>
+          <Info ref={ref3}>
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, y: 75 },
+                visible: { opacity: 1, y: 1 },
+              }}
+              initial='hidden'
+              animate={mainControls3}
+              transition={{
+                duration: 0.5,
+                delay: 0.25,
+              }}
+            >
+              <h2>Creative expertise</h2>
+              <p>
+                Detail-oriented and creative Front-End Web Developer with 4
+                years of experience in designing and implementing responsive and
+                user-friendly web applications. Proficient in a wide range of
+                front-end technologies and dedicated to delivering high-quality,
+                visually appealing websites.
+              </p>
+              <br />
+              <br />
+              <p>Let's create captivating online experiences together!</p>
+            </motion.div>
           </Info>
           <Square>
             <span></span>
           </Square>
         </RightInfo>
       </RowSection>
-      {/* <NumberSide>
-        <LeftSide>
-          <p>0</p>
-          <p>0</p>
-          <p>0</p>
-        </LeftSide>
-        <RightSide>
-          <p>1</p>
-          <p>2</p>
-          <p>3</p>
-        </RightSide>
-      </NumberSide>
-      <BodySide>
-        <SingleBody>
-          <Info>
-            <h2>Career pursuit</h2>
-            <p>
-              I'm all about chasing my career dreams while squeezing in time for
-              what I love. Whether it's getting lost in the great outdoors,
-              gaming with friends, or just kicking back with a good book, I'm
-              all about balancing work and play. Connecting with friends over
-              shared interests keeps me grounded, and I'm always up for trying
-              something new. Life's a journey, and I'm just enjoying the ride,
-              one adventure at a time.
-            </p>
-          </Info>
-          <Number>01</Number>
-        </SingleBody>
-        <SingleBody>
-          <Info>
-            <h2>Passionate innovation</h2>
-            <p>
-              In the midst of chasing my career dreams and enjoying life's
-              adventures, I've found a true passion for web development. There's
-              something incredibly rewarding about bringing ideas to life online
-              and creating meaningful digital experiences. Whether I'm coding
-              late into the night or collaborating with fellow developers, I'm
-              constantly honing my skills and pushing the boundaries of what's
-              possible. It's a dynamic field that keeps me engaged and inspired,
-              and I can't wait to see where this journey takes me next.
-            </p>
-          </Info>
-          <Number>02</Number>
-        </SingleBody>
-        <SingleBody>
-          <Info>
-            <h2>Creative expertise</h2>
-            <p>
-              Detail-oriented and creative Front-End Web Developer with 4 years
-              of experience in designing and implementing responsive and
-              user-friendly web applications. Proficient in a wide range of
-              front-end technologies and dedicated to delivering high-quality,
-              visually appealing websites.
-            </p>
-            <br />
-            <br />
-            <p>Let's create captivating online experiences together!</p>
-          </Info>
-          <Number>03</Number>
-        </SingleBody>
-      </BodySide> */}
     </BodyBox>
   );
 }

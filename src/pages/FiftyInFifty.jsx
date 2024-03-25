@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -21,12 +22,23 @@ function FiftyInFifty() {
       </Helmet>
       <ProjectBox>
         <TitleMainImg>
-          <h1>Fifty In Fifty</h1>
-          <LazyLoadImage
-            alt='Screenshot of my Fifty Javascript Projects in Fifty Days website'
-            src={FiftyImg}
-            effect='blur'
-          />
+          <motion.div
+            initial={{ opacity: 0, y: 75 }}
+            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.5,
+              delay: 0.25,
+            }}
+          >
+            <h1>Fifty In Fifty</h1>
+            <LazyLoadImage
+              alt='Screenshot of my Fifty Javascript Projects in Fifty Days website'
+              src={FiftyImg}
+              effect='blur'
+            />
+          </motion.div>
         </TitleMainImg>
         <ProjectInfo>
           <ProjectLinks>
