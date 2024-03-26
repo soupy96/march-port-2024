@@ -30,7 +30,6 @@ function Projects() {
   const mainControls7 = useAnimation();
 
   useEffect(() => {
-    window.scrollTo({ top: 0 });
     if (isInView1) {
       mainControls1.start('visible');
     }
