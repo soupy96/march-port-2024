@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
@@ -11,10 +10,6 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function Updraft() {
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-  });
-
   return (
     <div>
       <Helmet>

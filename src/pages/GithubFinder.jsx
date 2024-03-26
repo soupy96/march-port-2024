@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
@@ -11,10 +10,6 @@ import GithubImg from '../assets/imgs/github-finder-large.webp';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function GithubFinder() {
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-  });
-
   return (
     <div>
       <Helmet>
