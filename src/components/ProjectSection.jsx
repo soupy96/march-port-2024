@@ -31,7 +31,7 @@ function ProjectSection() {
   return (
     <MainProjectBox>
       <div className='projectbox'>
-        <Link to='https://bigmike.ca/todo' ref={ref1}>
+        <Link to='/todo' ref={ref1}>
           <motion.div
             variants={{
               hidden: { opacity: 0, y: 75 },
